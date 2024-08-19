@@ -11,7 +11,8 @@ html {
 }
 
 body {
-    background-color: cadetblue;
+    background-color: #030619;
+    color: #F1B52C;
 }
 
 nav ul li a {
@@ -151,6 +152,14 @@ h2 {
     align-items: flex-start; 
     gap: 1rem;
     padding: 0rem 2rem;
+}
+
+.footerMenu li, .footerMenu h6, .footerMenu p {
+    margin-bottom: 0.6rem;
+}
+
+.footerMenu li {
+    text-transform: uppercase;
 }
 
 footer {
