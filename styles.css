@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px red solid; */
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+nav ul li a {
+    color: #F1B52C;
+}
+
+nav ul li a:hover {
+    color: #F2FC60;
+}
+
+.navDesktop {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.mainLogo {
+    width: 100%;
+    max-width: 200px;
+    min-width: 120px;
+    height: auto;
+}
+
+.navLinksDesktop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    gap: 1rem;
+    padding: 0rem 2rem;
+    background-color:rgba(3, 6, 25, 1)
+}
+
+.navMobile {
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(3, 6, 25, 1)
+}
+
+.navLinksMobile {
+    position: absolute;
+    padding: 1rem;
+    background-color:  rgba(3, 6, 25, 0.6);
+    display: none;
+    width: 100%;
+}
+
+.navLinksMobile li {
+    margin-bottom: 0.3rem;
+}
+
+#menuButton:hover + .navLinksMobile {
+    display: block;
+}
+
+.navLinksMobile:hover {
+    display: block;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+#menuButton {
+    padding: 1rem;
+    color: #F1B52C;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.hero {
+    padding: 12em 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-image: url(ressources/hero.avif);
+    background-position: center;
+    background-size: cover;background-repeat: no-repeat;
+    min-height: 300px;
+    max-height: 600px;
+}
+
+h1 {
+    color: #C3FCF3;
+    background-color: rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+h2 {
+    padding: 1rem 0rem;
+}
+
+.servicesFlex {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+#services, #destinations {
+    text-align: center;
+    padding: 0rem 2rem;
+}
+
+.serviceImage {
+    max-width: 100%;
+    height: auto;
+}
+
+#services p {
+    text-align: justify;
+}
+
+.serviceTitle {
+    padding: 1rem;
+}
+
+.gridDestinations {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.destinationImage {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.footerMenu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start; 
+    gap: 1rem;
+    padding: 0rem 2rem;
+}
+
+footer {
+    padding: 0rem 2rem 2rem 2rem;
+    margin-top: 2rem;
+}
+
+.copyright {
+    margin-top: 2rem;
+}
+
+/* Extra small devices (phones, 620px and down) */
+@media only screen and (min-width: 0px) and (max-width: 620px) {
+    .navDesktop {
+        display: none;
+    }
+    .hero {
+        font-size: 0.8rem;
+    }
+    .servicesFlex {
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #services p {
+        text-align: center;
+    }
+    .mainLogo {
+        height: 54px;
+        width: auto;
+    }
+    .gridDestinations {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footerMenu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+  /* Small devices (portrait tablets and large phones, 621px to 768px) */
+@media only screen and (min-width: 621px) and (max-width: 768px) {
+    .navDesktop {
+        font-size: 0.9rem;
+    }
+
+    .navLinksDesktop {
+        padding: 0rem 1rem;
+    }
+
+    .navMobile {
+        display: none;
+    }
+    .hero {
+        font-size: 1rem;
+    }
+    .servicesFlex {
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 0 auto;
+    }
+    #services p {
+        text-align: center;
+    }
+    .gridDestinations {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+  /* Medium devices (landscape tablets, 768px to 992px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .navMobile {
+        display: none;
+    }
+    .hero {
+        font-size: 1.5rem;
+    }
+    .servicesFlex {
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #services p {
+        text-align: center;
+    }
+}
+
+  /* Large devices (laptops/desktops, 992px to 1200px) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .navMobile {
+        display: none;
+    }
+    .hero {
+        font-size: 1.75rem;
+    }
+
+}
+
+  /* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1201px) {
+    .navMobile {
+        display: none;
+    }
+}
