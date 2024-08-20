@@ -161,11 +161,19 @@ h2 {
     text-transform: uppercase;
 }
 
-.footerMenu ul li a {
+.companyLinks ul li a {
     color: #F1B52C;
 }
 
-.footerMenu ul li a:hover {
+.companyLinks ul li a:hover {
+    color: #F2FC60;
+}
+
+.supportLinks ul li a {
+    color: #F1B52C;
+}
+
+.supportLinks ul li a:hover {
     color: #F2FC60;
 }
 
