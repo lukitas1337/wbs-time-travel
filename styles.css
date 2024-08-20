@@ -161,7 +161,11 @@ h2 {
     text-transform: uppercase;
 }
 
-.footerMenu ul li:hover {
+.footerMenu ul li a {
+    color: #F1B52C;
+}
+
+.footerMenu ul li a:hover {
     color: #F2FC60;
 }
 
